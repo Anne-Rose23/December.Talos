@@ -1,0 +1,1647 @@
+{
+  "Name": "BDDProject",
+  "Description": "",
+  "QTest_ProjectDomain": null,
+  "QTest_ProjectKey": null,
+  "GR_MainUrl": null,
+  "GR_ProjectName": null,
+  "ProjectTechnologies": [],
+  "TestSetFolders": [],
+  "ComponentFolders": [],
+  "TestCaseFolders": [
+    {
+      "TempId": 157,
+      "Name": "BDD",
+      "Children": "",
+      "GherkinFile": null,
+      "TestCases": [
+        {
+          "TempId": 168,
+          "AUT": "",
+          "Description": "",
+          "StatusKey": "NEW",
+          "isMobile": false,
+          "TestCaseType": 1,
+          "IsExecutable": true,
+          "uri": "",
+          "DataSheet": null,
+          "Scenario": null,
+          "Authentication": null,
+          "TestSteps": [
+            {
+              "TempId": 2463,
+              "StepNumber": 1,
+              "ActionId": 27,
+              "ComponentId": null,
+              "CustomActionId": null,
+              "StepSectionId": 2,
+              "ObjectDictionaryId": null,
+              "ImageRepositoryId": null,
+              "LocatorTypeId": null,
+              "Screenshot": false,
+              "SkipStep": false,
+              "Description": "Navigate url",
+              "Locator": null,
+              "Value": "",
+              "Status": "Pending",
+              "UserSays": null,
+              "BotSays": null,
+              "Parameters": [],
+              "Assertions": [],
+              "qTestStepId": null,
+              "WaitForCondition": null,
+              "TimeoutWaitForCondition": 0,
+              "Name": null,
+              "Created": null,
+              "Modified": null
+            }
+          ],
+          "GRDomainNameandId": null,
+          "qTestTestCaseId": null,
+          "Name": "BDDTC001",
+          "Created": null,
+          "Modified": null
+        }
+      ],
+      "Folders": [],
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 158,
+      "Name": "Project_Feature_file_Feature",
+      "Children": "",
+      "GherkinFile": {
+        "TempId": 28,
+        "Name": "Project_Feature_file_Feature",
+        "Code": "Feature: Expedia\n\n   @Google\n   Scenario Outline:Search items in Google\n      Given the user navigate to \"<url>\"\n      Then user has to type \"<Data>\" in q textbox\n      Then user has to make a hit on btnK button\n\n      Examples:\n      |DT_url  |DT_Data  |\n      |www.google.com  |Hexaware  |\n\n   Scenario:Search items in Google for second time\n      Given the user navigate to \"<url>\"\n      |url|\n      |www.google.com|\n      Then user has to type \"<Data>\" in q textbox\n      |Data|\n      |Hexaware|\n      Then user has to make a hit on btnK button\n",
+        "FolderId": 158,
+        "BGComponentId": null,
+        "OriginalScript": "Feature: Expedia\n\n   @Google\n   Scenario Outline:Search items in Google\n      Given the user navigate to \"<url>\"\n      Then user has to type \"<Data>\" in q textbox\n      Then user has to make a hit on btnK button\n\n      Examples:\n      |DT_url  |DT_Data  |\n      |www.google.com  |Hexaware  |\n\n   Scenario:Search items in Google for second time\n      Given the user navigate to \"<url>\"\n      |url|\n      |www.google.com|\n      Then user has to type \"<Data>\" in q textbox\n      |Data|\n      |Hexaware|\n      Then user has to make a hit on btnK button\n",
+        "Created": null,
+        "Modified": null
+      },
+      "TestCases": [
+        {
+          "TempId": 169,
+          "AUT": "",
+          "Description": "",
+          "StatusKey": "NEW",
+          "isMobile": false,
+          "TestCaseType": 4,
+          "IsExecutable": true,
+          "uri": null,
+          "DataSheet": {
+            "TestCase": null,
+            "Parameters": [
+              {
+                "TempId": 912,
+                "Iterations": [
+                  {
+                    "Iteration": 1,
+                    "Value": "www.google.com",
+                    "ParameterId": 912,
+                    "Skip": null,
+                    "Name": null,
+                    "Created": null,
+                    "Modified": null
+                  }
+                ],
+                "DataSheetId": 169,
+                "Name": "DT_url",
+                "Created": null,
+                "Modified": null
+              },
+              {
+                "TempId": 913,
+                "Iterations": [
+                  {
+                    "Iteration": 1,
+                    "Value": "Hexaware",
+                    "ParameterId": 913,
+                    "Skip": null,
+                    "Name": null,
+                    "Created": null,
+                    "Modified": null
+                  }
+                ],
+                "DataSheetId": 169,
+                "Name": "DT_Data",
+                "Created": null,
+                "Modified": null
+              },
+              {
+                "TempId": 914,
+                "Iterations": [
+                  {
+                    "Iteration": 1,
+                    "Value": "1",
+                    "ParameterId": 914,
+                    "Skip": 0,
+                    "Name": null,
+                    "Created": null,
+                    "Modified": null
+                  }
+                ],
+                "DataSheetId": 169,
+                "Name": "Iteration",
+                "Created": null,
+                "Modified": null
+              },
+              {
+                "TempId": 915,
+                "Iterations": [
+                  {
+                    "Iteration": 1,
+                    "Value": "",
+                    "ParameterId": 915,
+                    "Skip": 0,
+                    "Name": null,
+                    "Created": null,
+                    "Modified": null
+                  }
+                ],
+                "DataSheetId": 169,
+                "Name": "Skip",
+                "Created": null,
+                "Modified": null
+              }
+            ],
+            "Name": "Scenario_Search items in Google",
+            "Created": null,
+            "Modified": null
+          },
+          "Scenario": {
+            "TempId": 30,
+            "Scenario_Number": 1,
+            "TC_Id": 169,
+            "GherkinFile_Id": 28,
+            "Name": null,
+            "Created": null,
+            "Modified": null
+          },
+          "Authentication": null,
+          "TestSteps": [
+            {
+              "TempId": 2464,
+              "StepNumber": 1,
+              "ActionId": 27,
+              "ComponentId": null,
+              "CustomActionId": null,
+              "StepSectionId": 2,
+              "ObjectDictionaryId": null,
+              "ImageRepositoryId": null,
+              "LocatorTypeId": null,
+              "Screenshot": false,
+              "SkipStep": false,
+              "Description": "Given the user navigate to \"<url>\"",
+              "Locator": "",
+              "Value": "DT_url",
+              "Status": "Pending",
+              "UserSays": null,
+              "BotSays": null,
+              "Parameters": [],
+              "Assertions": [],
+              "qTestStepId": null,
+              "WaitForCondition": null,
+              "TimeoutWaitForCondition": 0,
+              "Name": null,
+              "Created": null,
+              "Modified": null
+            },
+            {
+              "TempId": 2465,
+              "StepNumber": 2,
+              "ActionId": 43,
+              "ComponentId": null,
+              "CustomActionId": null,
+              "StepSectionId": 2,
+              "ObjectDictionaryId": 1482,
+              "ImageRepositoryId": null,
+              "LocatorTypeId": 4,
+              "Screenshot": false,
+              "SkipStep": false,
+              "Description": "Then user has to type \"<Data>\" in q textbox",
+              "Locator": "q",
+              "Value": "DT_Data",
+              "Status": "Pending",
+              "UserSays": null,
+              "BotSays": null,
+              "Parameters": [],
+              "Assertions": [],
+              "qTestStepId": null,
+              "WaitForCondition": null,
+              "TimeoutWaitForCondition": 0,
+              "Name": null,
+              "Created": null,
+              "Modified": null
+            },
+            {
+              "TempId": 2466,
+              "StepNumber": 3,
+              "ActionId": 9,
+              "ComponentId": null,
+              "CustomActionId": null,
+              "StepSectionId": 2,
+              "ObjectDictionaryId": 1483,
+              "ImageRepositoryId": null,
+              "LocatorTypeId": 4,
+              "Screenshot": false,
+              "SkipStep": false,
+              "Description": "Then user has to make a hit on btnK button",
+              "Locator": "btnK",
+              "Value": "",
+              "Status": "Pending",
+              "UserSays": null,
+              "BotSays": null,
+              "Parameters": [],
+              "Assertions": [],
+              "qTestStepId": null,
+              "WaitForCondition": null,
+              "TimeoutWaitForCondition": 0,
+              "Name": null,
+              "Created": null,
+              "Modified": null
+            }
+          ],
+          "GRDomainNameandId": null,
+          "qTestTestCaseId": null,
+          "Name": "Scenario Outline_ Scenario_Search items in Google",
+          "Created": null,
+          "Modified": null
+        }
+      ],
+      "Folders": [],
+      "Created": null,
+      "Modified": null
+    }
+  ],
+  "HostConfigurations": [],
+  "GlobalDatasheets": [],
+  "Pages": [
+    {
+      "TempId": 99,
+      "EntityName": null,
+      "ProjectId": 63,
+      "DictionaryPageType": 1,
+      "Name": "Google",
+      "Created": null,
+      "Modified": null
+    }
+  ],
+  "ObjectDictionaries": [
+    {
+      "TempId": 1482,
+      "ProjectId": 63,
+      "LocatorType": 4,
+      "Locator": "q",
+      "PageId": 99,
+      "OuterHTML": "",
+      "Name": "Then user has to type \"<Data>\" in q textbox",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1483,
+      "ProjectId": 63,
+      "LocatorType": 4,
+      "Locator": "btnK",
+      "PageId": 99,
+      "OuterHTML": "",
+      "Name": "Then user has to make a hit on btnK button",
+      "Created": null,
+      "Modified": null
+    }
+  ],
+  "CustomActionFolders": [],
+  "ProjectSettingsList": [
+    {
+      "TempId": 1433,
+      "ProjectId": 63,
+      "Name": "Parameter_Name_Variable",
+      "Value": "DT_",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1434,
+      "ProjectId": 63,
+      "Name": "GP_Prefix_Variable",
+      "Value": "GDT_",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1435,
+      "ProjectId": 63,
+      "Name": "ReportDirectory",
+      "Value": "C:\\Temp",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1436,
+      "ProjectId": 63,
+      "Name": "Screenshots",
+      "Value": "True",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1437,
+      "ProjectId": 63,
+      "Name": "LanguageType",
+      "Value": "Java",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1438,
+      "ProjectId": 63,
+      "Name": "ExportTestNGData",
+      "Value": "true",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1439,
+      "ProjectId": 63,
+      "Name": "ExportID2EGrandpa",
+      "Value": "false",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1440,
+      "ProjectId": 63,
+      "Name": "TFS_username",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1441,
+      "ProjectId": 63,
+      "Name": "TFS_password",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1442,
+      "ProjectId": 63,
+      "Name": "GIT_username",
+      "Value": "annerose.jeroldin@gmail.com",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1443,
+      "ProjectId": 63,
+      "Name": "GIT_password",
+      "Value": "Sagayaoct+12",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1444,
+      "ProjectId": 63,
+      "Name": "MapObjectsToStepsBDD",
+      "Value": "true",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1445,
+      "ProjectId": 63,
+      "Name": "BrowserStack",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1446,
+      "ProjectId": 63,
+      "Name": "CrossBrowserTesting",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1447,
+      "ProjectId": 63,
+      "Name": "AWS",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1448,
+      "ProjectId": 63,
+      "Name": "ActionExecutionsAttempts",
+      "Value": "1",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1449,
+      "ProjectId": 63,
+      "Name": "DriverInitializationsAttempts",
+      "Value": "1",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1450,
+      "ProjectId": 63,
+      "Name": "PollingTime",
+      "Value": "1",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1451,
+      "ProjectId": 63,
+      "Name": "WaitTimeOut",
+      "Value": "10",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1452,
+      "ProjectId": 63,
+      "Name": "Jira_ProjectDomain",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1453,
+      "ProjectId": 63,
+      "Name": "Jira_ProjectKey",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1454,
+      "ProjectId": 63,
+      "Name": "TDM_External",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1455,
+      "ProjectId": 63,
+      "Name": "TDM_External_ConnectionString",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1456,
+      "ProjectId": 63,
+      "Name": "HPALM_Enabled",
+      "Value": "",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1460,
+      "ProjectId": 63,
+      "Name": "STM_GIT_REPO_URL",
+      "Value": "https://github.com/Anne-Rose23/December.Talos",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1461,
+      "ProjectId": 63,
+      "Name": "STM_GIT_REPO_BRANCH",
+      "Value": "master",
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1462,
+      "ProjectId": 63,
+      "Name": "STM_GIT_LOCAL_PATH",
+      "Value": "C:\\Users\\44931\\Desktop\\GIT",
+      "Created": null,
+      "Modified": null
+    }
+  ],
+  "AUTs": [],
+  "Releases": [
+    {
+      "TempId": 80,
+      "ProjectId": 63,
+      "FolderId": null,
+      "Name": "BDD",
+      "Cycles": [
+        {
+          "TempId": 96,
+          "ReleaseId": 80,
+          "ProjectId": 63,
+          "TestSets": [
+            {
+              "TempId": 0,
+              "statusId": 1,
+              "TestExecutionCycleId": 96,
+              "TestSetType": 1,
+              "CloudServiceId": null,
+              "AUT": "",
+              "AUTVersion": "",
+              "Description": "",
+              "RetriesCount": 0,
+              "TypeOfRetry": "Final",
+              "TestExecutionFolderId": null,
+              "GlobalsheetId": null,
+              "TestInstances": [
+                {
+                  "TestId": 169,
+                  "Number": 1,
+                  "StatusId": 1,
+                  "HostConfigurationId": null,
+                  "TesterName": "TAdmin",
+                  "Name": "",
+                  "Username": "TAdmin",
+                  "UserFullname": "Talos Talos",
+                  "ConfigurationName": "Default",
+                  "StatusName": "",
+                  "Duration": "00:00:20",
+                  "ReportPath": "",
+                  "TestDescription": "",
+                  "ConfigurationDetails": "",
+                  "TestInstanceSteps": [],
+                  "QTestRunId": null,
+                  "ChaosServiceId": null,
+                  "Created": null,
+                  "Modified": null
+                }
+              ],
+              "QTestIds": null,
+              "Name": "TC001",
+              "Created": null,
+              "Modified": null
+            }
+          ],
+          "Folders": [],
+          "Name": "BDDTC001",
+          "Created": null,
+          "Modified": null
+        }
+      ],
+      "Created": null,
+      "Modified": null
+    }
+  ],
+  "Cycles": [],
+  "ID2EComponentDDRows": [],
+  "Keywords": [
+    {
+      "TempId": 932,
+      "Keyword": "Accept alert",
+      "ActionId": 2,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 933,
+      "Keyword": "Accept alert if exists",
+      "ActionId": 63,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 934,
+      "Keyword": "If alert exists accept it",
+      "ActionId": 63,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 935,
+      "Keyword": "Dismiss",
+      "ActionId": 4,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 936,
+      "Keyword": "Dismiss alert",
+      "ActionId": 4,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 937,
+      "Keyword": "Close alert",
+      "ActionId": 4,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 938,
+      "Keyword": "Get text from alert",
+      "ActionId": 5,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 939,
+      "Keyword": "Set text alert",
+      "ActionId": 6,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 940,
+      "Keyword": "Check",
+      "ActionId": 7,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 941,
+      "Keyword": "Choose",
+      "ActionId": 7,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 942,
+      "Keyword": "Chose",
+      "ActionId": 7,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 943,
+      "Keyword": "Check option",
+      "ActionId": 56,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 944,
+      "Keyword": "Clear",
+      "ActionId": 8,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 945,
+      "Keyword": "Empty",
+      "ActionId": 8,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 946,
+      "Keyword": "Delete",
+      "ActionId": 8,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 947,
+      "Keyword": "Remove",
+      "ActionId": 8,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 948,
+      "Keyword": "Click",
+      "ActionId": 9,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 949,
+      "Keyword": "Clicked",
+      "ActionId": 9,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 950,
+      "Keyword": "hit",
+      "ActionId": 9,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 951,
+      "Keyword": "Click and hold",
+      "ActionId": 10,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 952,
+      "Keyword": "Keep pressed",
+      "ActionId": 10,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 953,
+      "Keyword": "Long click",
+      "ActionId": 10,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 954,
+      "Keyword": "Press and hold",
+      "ActionId": 10,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 955,
+      "Keyword": "Tap and hold",
+      "ActionId": 10,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 956,
+      "Keyword": "Click on object",
+      "ActionId": 11,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 957,
+      "Keyword": "Click and hold on object",
+      "ActionId": 11,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 958,
+      "Keyword": "Close",
+      "ActionId": 12,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 959,
+      "Keyword": "Deselect all",
+      "ActionId": 13,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 960,
+      "Keyword": "Deselect by index",
+      "ActionId": 14,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 961,
+      "Keyword": "Deselect by text",
+      "ActionId": 15,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 962,
+      "Keyword": "Deselect by value",
+      "ActionId": 16,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 963,
+      "Keyword": "Double click",
+      "ActionId": 17,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 964,
+      "Keyword": "Double press",
+      "ActionId": 17,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 965,
+      "Keyword": "Doubleclickonobject",
+      "ActionId": 18,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 966,
+      "Keyword": "Drag and drop",
+      "ActionId": 19,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 967,
+      "Keyword": "Get property",
+      "ActionId": 57,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 968,
+      "Keyword": "Go back",
+      "ActionId": 21,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 969,
+      "Keyword": "Go forward",
+      "ActionId": 22,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 970,
+      "Keyword": "Highlight",
+      "ActionId": 23,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 971,
+      "Keyword": "Press key",
+      "ActionId": 24,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 972,
+      "Keyword": "Release key",
+      "ActionId": 25,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 973,
+      "Keyword": "Pass mouse over",
+      "ActionId": 26,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 974,
+      "Keyword": "Mouse over and click",
+      "ActionId": 64,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 975,
+      "Keyword": "Navigate",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 976,
+      "Keyword": "Go",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 977,
+      "Keyword": "Went",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 978,
+      "Keyword": "Go to",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 979,
+      "Keyword": "I am in",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 980,
+      "Keyword": "User is at",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 981,
+      "Keyword": "Open",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 982,
+      "Keyword": "Browse",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 983,
+      "Keyword": "is at",
+      "ActionId": 27,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 984,
+      "Keyword": "Object is displayed",
+      "ActionId": 28,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 985,
+      "Keyword": "Object enabled",
+      "ActionId": 29,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 986,
+      "Keyword": "Object selected",
+      "ActionId": 30,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 987,
+      "Keyword": "Quit",
+      "ActionId": 59,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 988,
+      "Keyword": "Exit",
+      "ActionId": 59,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 989,
+      "Keyword": "Terminate",
+      "ActionId": 59,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 990,
+      "Keyword": "Refresh",
+      "ActionId": 31,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 991,
+      "Keyword": "Reload",
+      "ActionId": 31,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 992,
+      "Keyword": "Relaease",
+      "ActionId": 32,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 993,
+      "Keyword": "Relase on object",
+      "ActionId": 33,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 994,
+      "Keyword": "Resize window",
+      "ActionId": 74,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 995,
+      "Keyword": "Right click",
+      "ActionId": 34,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 996,
+      "Keyword": "Make right click on object",
+      "ActionId": 35,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 997,
+      "Keyword": "Robotkeyboard",
+      "ActionId": 54,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 998,
+      "Keyword": "Scroll",
+      "ActionId": 36,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 999,
+      "Keyword": "Securerobotkeyboard",
+      "ActionId": 66,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1000,
+      "Keyword": "Select by index",
+      "ActionId": 37,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1001,
+      "Keyword": "Select by text",
+      "ActionId": 38,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1002,
+      "Keyword": "select",
+      "ActionId": 38,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1003,
+      "Keyword": "Select by value",
+      "ActionId": 39,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1004,
+      "Keyword": "Selectframe",
+      "ActionId": 40,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1005,
+      "Keyword": "Select list by text",
+      "ActionId": 72,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1006,
+      "Keyword": "Select spinner by text",
+      "ActionId": 73,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1007,
+      "Keyword": "Submit",
+      "ActionId": 41,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1008,
+      "Keyword": "Switch to default content",
+      "ActionId": 61,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1009,
+      "Keyword": "Switch to frame",
+      "ActionId": 42,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1010,
+      "Keyword": "Switchtowindow",
+      "ActionId": 58,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1011,
+      "Keyword": "Type",
+      "ActionId": 43,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1012,
+      "Keyword": "Insert",
+      "ActionId": 43,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1013,
+      "Keyword": "Fill",
+      "ActionId": 43,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1014,
+      "Keyword": "Set",
+      "ActionId": 43,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1015,
+      "Keyword": "Enter",
+      "ActionId": 43,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1016,
+      "Keyword": "Typerandomvalue",
+      "ActionId": 65,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1017,
+      "Keyword": "Uncheck",
+      "ActionId": 46,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1018,
+      "Keyword": "Display",
+      "ActionId": 53,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1019,
+      "Keyword": "Is display",
+      "ActionId": 53,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1020,
+      "Keyword": "Verify property",
+      "ActionId": 52,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1021,
+      "Keyword": "Verifytext",
+      "ActionId": 62,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1022,
+      "Keyword": "Wait",
+      "ActionId": 47,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1023,
+      "Keyword": "wait for",
+      "ActionId": 48,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1024,
+      "Keyword": "wait for popup",
+      "ActionId": 50,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    },
+    {
+      "TempId": 1025,
+      "Keyword": "window focus",
+      "ActionId": 51,
+      "ProjectId": 63,
+      "ComponentId": null,
+      "CustomActionId": null,
+      "Name": null,
+      "Created": null,
+      "Modified": null
+    }
+  ],
+  "StatusTestCaseBySite": null,
+  "BrowserOptions": [],
+  "ApiTemplates": [],
+  "FieldsMappings": [],
+  "CloudServices": [],
+  "GlobalSheets": [],
+  "ImageRepository": [],
+  "Created": null,
+  "Modified": null
+}
